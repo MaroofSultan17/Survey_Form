@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="../CSS/Survey.css">
+</head>
+
+<body>
+    <form action="/Action">
+        <header class="header">
+            <div id="heading">
+                <h1>WelCome to Survey Form</h1>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div>
+                    <p>Name</p>
+                    <input type="text" name="name" id="username" placeholder="Username">
+                </div>
+
+                <div>
+                    <p>Email</p>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+
+                <div>
+                    <p>Age</p>
+                    <input type="text" name="age" id="age" placeholder="Enter Age">
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <p>Which option is best for you</p>
+                    <select name="select" id="select">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="visitor">Visitor</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <p>Which you recommend for the GreekCode?</p>
+                    <div class="form_radio">
+                        <label for="Yes"><input type="radio" name="recommend" id="Yes" value="Yes">Yes</label>
+
+                        <label for="No"><input type="radio" name="recommend" id="No" value="No">No</label>
+
+                        <label for="Maybe"></label><input type="radio" name="recommend" id="Maybe" value="Maybe">
+                        Maybe</label>
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <p>Language and frame Work You know</p>
+                </div>
+                <div class="form_skill">
+
+                    <label for="C++"><input type="checkbox" name="skill" id="C++" value="C++">C++</label>
+
+                    <label for="Java"><input type="checkbox" name="skill" id="Java" value="Java">Java</label>
+
+                    <label for="Python"><input type="checkbox" name="skill" id="Python" value="Python">
+                        Python</label>
+
+                    <label for="C#"><input type="checkbox" name="skill" id="C#" value="C#">C#</label>
+
+                    <label for="JavaScript"><input type="checkbox" name="skill" id="JavaScript" value="JavaScript">
+                        JavaScript</label>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="feedback">
+                    <p>Any Comment or Suggestion</p>
+                    <!-- <input type="text" name="feedback" id="feedback"> -->
+                    <textarea name="fb" id="fb" cols="30" rows="10" placeholder="Feedback"></textarea>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <br>
+                <button type="submit">Submit</button>
+            </div>
+        </footer>
+
+    </form>
+</body>
+
+</html>
